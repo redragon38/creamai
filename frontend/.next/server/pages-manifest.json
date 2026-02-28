@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/tool/[id]": "pages/tool/[id].js",
+  "/outils": "pages/outils.js",
+  "/outils/[category]": "pages/outils/[category].js",
+  "/comparatifs": "pages/comparatifs.js",
+  "/blog": "pages/blog.js",
+  "/pourquoi-nous": "pages/pourquoi-nous.js",
+  "/newsletter": "pages/newsletter.js",
+  "/contact": "pages/contact.js"
+}
