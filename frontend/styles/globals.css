@@ -13,6 +13,7 @@
   --border: #e5e0fa;
 }
 
+<<<<<<< HEAD
 /* ── Reset & base mobile-first ── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,10 +27,13 @@ html {
   overscroll-behavior-y: none;
 }
 
+=======
+>>>>>>> c228359ea51c899aa80248fc4488d9fe7c10d9f7
 body {
   color: var(--text);
   background-color: var(--bg);
   min-height: 100vh;
+<<<<<<< HEAD
   font-family: 'Space Grotesk', 'Segoe UI', system-ui, -apple-system, sans-serif;
   /* Rendu optimisé mobile */
   -webkit-font-smoothing: antialiased;
@@ -98,6 +102,11 @@ img {
 }
 
 /* ── Utilitaires ── */
+=======
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+>>>>>>> c228359ea51c899aa80248fc4488d9fe7c10d9f7
 @layer utilities {
   .gradient-purple {
     background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
@@ -120,6 +129,7 @@ img {
   .section-bg {
     background: linear-gradient(180deg, #f8f7ff 0%, #f0ebff 100%);
   }
+<<<<<<< HEAD
 
   /* Scroll horizontal mobile sans scrollbar visible */
   .scroll-x-mobile {
@@ -158,4 +168,50 @@ img {
   .hover\:-translate-y-0\.5:hover {
     transform: none !important;
   }
+=======
+}
+
+/* Supprime le surlignement bleu natif sur les titres et textes */
+::selection {
+  background: rgba(124, 58, 237, 0.15);
+  color: inherit;
+}
+
+/* Fix inputs/search fond blanc avec texte visible */
+input, textarea, select {
+  color: #111827;
+  background-color: #ffffff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Supprime l'outline bleu sur focus et remplace par violet subtil */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+/* ── Supprime tout surlignement sur liens et cartes ── */
+a, button, [role="button"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* ── Supprime le surlignement bleu natif du navigateur sur tout le site ── */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: transparent;
+  color: inherit;
+}
+
+::-moz-selection {
+  background: transparent;
+  color: inherit;
+>>>>>>> c228359ea51c899aa80248fc4488d9fe7c10d9f7
 }

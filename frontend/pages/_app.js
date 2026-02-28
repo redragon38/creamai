@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+<<<<<<< HEAD
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
@@ -11,4 +12,9 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </>
   )
+=======
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+>>>>>>> c228359ea51c899aa80248fc4488d9fe7c10d9f7
 }
