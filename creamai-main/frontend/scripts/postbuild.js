@@ -1,14 +1,25 @@
-/**
- * Hook post-build Next.js
- * Appelé automatiquement par npm après chaque "npm run build"
- * grâce au script "postbuild" dans package.json.
- */
-const generateSitemap = require('./generate-sitemap');
+const fs = require('fs');
+const path = require('path');
 
-console.log('\n🚀 Post-build : génération du sitemap...');
-try {
-  generateSitemap();
-} catch (err) {
-  console.error('❌ Erreur post-build sitemap :', err.message);
-  process.exit(1);
+console.log('🔨 Post-build script running...');
+
+// Ensure public/data directory exists
+const dataDir = path.join(process.cwd(), 'public', 'data');
+const toolsFile = path.join(dataDir, 'tools.json');
+
+if (!fs.existsSync(dataDir)) {
+  console.log('📁 Creating public/data directory...');
+  fs.mkdirSync(dataDir, { recursive: true });
 }
+
+// Check if tools.json exists, if not create default
+if (!fs.existsSync(toolsFile)) {
+  console.log('⚠️  tools.json not found, creating default...');
+  const defaultTools = [];
+  fs.writeFileSync(toolsFile, JSON.stringify(defaultTools, null, 2));
+  console.log('✅ Default tools.json created');
+} else {
+  console.log('✅ tools.json found');
+}
+
+console.log('✨ Post-build script completed!');
