@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT",
+    "description": "Assistant IA conversationnel puissant pour l'automatisation et la création",
+    "category": "Intelligence artificielle",
+    "rating": 4.9,
+    "reviews": 2500,
+    "price": "Gratuit / 20$/mois",
+    "pros": ["Très intuitif", "Multilingue", "Gratuit pour commencer"],
+    "cons": ["Limité en gratuit", "Données d'entraînement jusqu'à 2024"]
+  },
+  {
+    "id": 2,
+    "name": "ExpressVPN",
+    "description": "VPN rapide et sécurisé pour protéger votre confidentialité en ligne",
+    "category": "VPN",
+    "rating": 4.8,
+    "reviews": 3200,
+    "price": "À partir de 6.67$/mois",
+    "pros": ["Ultra rapide", "30 jours remboursé", "193 serveurs"],
+    "cons": ["Plus cher que la concurrence", "Pas de gratuit"]
+  },
+  {
+    "id": 3,
+    "name": "Bluehost",
+    "description": "Hébergement web fiable recommandé par WordPress",
+    "category": "Hébergement web",
+    "rating": 4.5,
+    "reviews": 1800,
+    "price": "À partir de 2.95$/mois",
+    "pros": ["Bon rapport qualité-prix", "Support 24/7", "Domaine gratuit"],
+    "cons": ["Renouvellement plus cher", "Migration non incluse"]
+  },
+  {
+    "id": 4,
+    "name": "Bitdefender",
+    "description": "Antivirus réputé pour la protection complète de votre système",
+    "category": "Antivirus",
+    "rating": 4.7,
+    "reviews": 2100,
+    "price": "À partir de 19.99€/an",
+    "pros": ["Très léger", "Excellent score AV-TEST", "Interface intuitive"],
+    "cons": ["Support français limité", "Fonctionnalités moins riches que McAfee"]
+  },
+  {
+    "id": 5,
+    "name": "Canva",
+    "description": "Outil de design visuel intuitif pour créer du contenu professionnel",
+    "category": "Intelligence artificielle",
+    "rating": 4.8,
+    "reviews": 3500,
+    "price": "Gratuit / 12.99$/mois",
+    "pros": ["Très facile à utiliser", "Milliers de modèles", "IA intégrée"],
+    "cons": ["Limitations en gratuit", "Moins complet que Figma pro"]
+  }
+]

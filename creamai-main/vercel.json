@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm ci && npm run build",
+  "outputDirectory": "frontend/.next",
+  "installCommand": "npm ci",
+  "public": false,
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://api.thecreamai.com",
+    "SITE_URL": "https://thecreamai.com"
+  },
+  "envs": {
+    "preview": {
+      "NEXT_PUBLIC_API_URL": "https://api-preview.example.com",
+      "SITE_URL": "https://preview.thecreamai.com"
+    },
+    "production": {
+      "NEXT_PUBLIC_API_URL": "https://api.thecreamai.com",
+      "SITE_URL": "https://thecreamai.com"
+    }
+  }
+}
