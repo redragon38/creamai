@@ -1,12 +1,16 @@
 {
-  "name": "Thecreamai - Outils IA pour Créateurs",
+  "name": "Thecreamai — Meilleurs Outils IA, VPN & Web",
   "short_name": "Thecreamai",
-  "description": "Découvrez les meilleurs outils IA pour booster votre productivité et votre créativité",
+  "description": "Découvrez et comparez les meilleurs outils IA, VPN, hébergement web et antivirus.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0a0118",
+  "background_color": "#f8f7ff",
   "theme_color": "#7c3aed",
   "orientation": "portrait-primary",
+  "lang": "fr-FR",
+  "dir": "ltr",
+  "categories": ["productivity", "business", "utilities"],
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -21,15 +25,16 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["productivity", "business", "utilities"],
-  "lang": "fr-FR",
-  "dir": "ltr",
-  "scope": "/",
-  "screenshots": [
+  "shortcuts": [
     {
-      "src": "/screenshot-1.png",
-      "sizes": "1280x720",
-      "type": "image/png"
+      "name": "Outils IA",
+      "url": "/outils/intelligence-artificielle",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Top 10",
+      "url": "/top-10-intelligence-artificielle",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
     }
   ]
 }

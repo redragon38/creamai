@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import '../styles/globals.css';
 import { useEffect, useState } from 'react';
 import { ArrowUp } from 'lucide-react';
@@ -20,12 +21,26 @@ function ScrollToTop() {
     </button>
   );
 }
+=======
+import '../styles/globals.css'
+import Head from 'next/head'
+>>>>>>> e1e71006e992e9f1033014f1fa53003639ef3267
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+<<<<<<< HEAD
       <Component {...pageProps} />
       <ScrollToTop />
     </>
   );
+=======
+      <Head>
+        {/* Viewport correct ici car Head dans _app se met dans <head> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
+>>>>>>> e1e71006e992e9f1033014f1fa53003639ef3267
 }
