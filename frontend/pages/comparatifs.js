@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
-import { Star, ExternalLink, ArrowRight } from 'lucide-react';
+import { Star, ExternalLink, ArrowRight, Search, X } from 'lucide-react';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'public', 'data', 'tools.json');
@@ -113,11 +113,16 @@ function ToolCard({ tool, rank }) {
 
 export default function ComparatifsPage({ tools }) {
   const [selectedCat, setSelectedCat] = useState('Tout');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const filtered = (selectedCat === 'Tout'
     ? tools
     : tools.filter(t => t.categories?.includes(selectedCat))
-  ).sort((a, b) => (b.rating?.value || 0) - (a.rating?.value || 0));
+  ).filter(t => {
+    if (!searchQuery.trim()) return true;
+    const q = searchQuery.toLowerCase();
+    return t.name?.toLowerCase().includes(q) || t.short?.toLowerCase().includes(q) || t.highlight?.toLowerCase().includes(q);
+  }).sort((a, b) => (b.rating?.value || 0) - (a.rating?.value || 0));
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -159,6 +164,23 @@ export default function ComparatifsPage({ tools }) {
                 {cat}
               </button>
             ))}
+          </div>
+
+          {/* Barre de recherche */}
+          <div className="relative max-w-md mx-auto mb-6">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              placeholder="Rechercher un outil..."
+              className="w-full bg-white border border-gray-200 rounded-xl pl-10 pr-10 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-100 transition-all shadow-sm"
+            />
+            {searchQuery && (
+              <button onClick={() => setSearchQuery('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors">
+                <X className="w-4 h-4" />
+              </button>
+            )}
           </div>
 
           {/* Compteur */}
