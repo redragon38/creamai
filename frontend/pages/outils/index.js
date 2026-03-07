@@ -32,6 +32,8 @@ export async function getStaticProps() {
   tools.forEach(tool => {
     (tool.categories || []).forEach(cat => {
       if (FIXED_CATEGORIES.includes(cat)) categoryMap[cat]++;
+      // Les outils "IA générative" sont comptés dans "Intelligence artificielle"
+      if (cat === 'IA générative') categoryMap['Intelligence artificielle']++;
     });
   });
   return { props: { tools, categoryMap } };
@@ -42,7 +44,10 @@ export default function ToolsPage({ tools, categoryMap }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filtered = tools.filter(tool => {
-    const matchCat = activeCategory === 'all' || (tool.categories || []).includes(activeCategory);
+    const toolCats = tool.categories || [];
+    const matchCat = activeCategory === 'all' ||
+      toolCats.includes(activeCategory) ||
+      (activeCategory === 'Intelligence artificielle' && toolCats.includes('IA générative'));
     const matchSearch = !searchTerm ||
       tool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (tool.short || '').toLowerCase().includes(searchTerm.toLowerCase());

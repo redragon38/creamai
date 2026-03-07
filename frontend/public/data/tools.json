@@ -7543,5 +7543,510 @@
       "Qualité variable"
     ],
     "verdict": "Runway s'impose comme le leader de la génération vidéo par IA. Sa capacité à transformer du texte en vidéo et ses outils d'édition avancés en font un incontournable pour les créateurs de contenu souhaitant produire des vidéos professionnelles sans compétences techniques."
+  },
+  {
+    "id": "norton360",
+    "slug": "norton360",
+    "name": "Norton 360",
+    "partner": "NortonLifeLock",
+    "website": "https://fr.norton.com",
+    "affiliateUrl": "https://fr.norton.com",
+    "logo": "/partners/norton360.png",
+    "og": "",
+    "categories": [
+      "Antivirus"
+    ],
+    "tags": [
+      "Antivirus",
+      "cybersécurité",
+      "VPN",
+      "vol d'identité",
+      "protection"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "es"
+    ],
+    "priceMonthly": 3.33,
+    "priceCurrency": "EUR",
+    "price": "À partir de 3,33 €/mois",
+    "trial": true,
+    "status": "published",
+    "source": "éditeur",
+    "rating": {
+      "value": 4.6,
+      "count": 112
+    },
+    "selection": false,
+    "featured": false,
+    "verified": true,
+    "isAffiliate": false,
+    "hasReview": true,
+    "short": "Norton 360 offre une protection antivirus complète avec VPN illimité, surveillance du dark web et protection contre le vol d'identité.",
+    "highlight": "Suite de sécurité tout-en-un avec VPN illimité et surveillance du dark web inclus.",
+    "description": "Norton 360 est une suite de __cybersécurité__ complète développée par NortonLifeLock, protégeant des millions d'utilisateurs dans le monde. Elle combine une __protection antivirus en temps réel__, un __VPN illimité__, un gestionnaire de mots de passe et une surveillance active du __dark web__. Son moteur de détection basé sur le __machine learning__ identifie et bloque malwares, ransomwares et attaques de phishing avant qu'ils ne causent des dommages. Norton 360 inclut également une __protection contre le vol d'identité__, alertant immédiatement en cas de fuite de données personnelles.",
+    "strengths": [
+      "__VPN illimité__ inclus dans tous les abonnements",
+      "__Surveillance du dark web__ pour détecter les fuites de données",
+      "__Protection en temps réel__ avec taux de détection élevé",
+      "__Gestionnaire de mots de passe__ intégré",
+      "__Sauvegarde cloud__ jusqu'à 50 Go selon le plan",
+      "__Interface claire__ et facile à utiliser"
+    ],
+    "strengthShort": [
+      "VPN illimité inclus",
+      "Surveillance dark web",
+      "Sauvegarde cloud",
+      "Gestionnaire mots de passe"
+    ],
+    "limitations": [
+      "__Prix de renouvellement__ nettement plus élevé que la première année",
+      "__Ressources système__ parfois importantes lors des scans",
+      "__Support__ téléphonique parfois long en période de pointe",
+      "__Fonctions avancées__ complexes pour les utilisateurs débutants"
+    ],
+    "limitationsShort": [
+      "Renouvellement coûteux",
+      "Consomme des ressources",
+      "Support téléphonique lent"
+    ],
+    "idealFor": [
+      "__Familles__ cherchant une protection multi-appareils complète",
+      "__Voyageurs fréquents__ bénéficiant du VPN illimité",
+      "__Personnes soucieuses__ de leur identité numérique",
+      "__Utilisateurs Windows__ voulant une suite tout-en-un"
+    ],
+    "notFor": [
+      "__Utilisateurs macOS ou Linux__ cherchant un support approfondi",
+      "__Budgets serrés__ qui ne veulent pas payer le renouvellement",
+      "__Experts__ qui préfèrent des solutions granulaires"
+    ],
+    "verdict": "Norton 360 est une __référence__ pour les utilisateurs cherchant une protection numérique complète sans complexité. Son __VPN illimité__ et sa surveillance du dark web le démarquent nettement de la concurrence. Le principal bémol reste le prix de renouvellement élevé après la première année.",
+    "faq": [
+      {
+        "q": "Norton 360 inclut-il un VPN ?",
+        "a": "Oui, un VPN illimité est inclus dans tous les plans Norton 360."
+      },
+      {
+        "q": "Sur combien d'appareils peut-on l'utiliser ?",
+        "a": "Selon le plan choisi, de 1 à un nombre illimité d'appareils."
+      },
+      {
+        "q": "Norton ralentit-il le PC ?",
+        "a": "L'impact est modéré, surtout lors des scans complets en arrière-plan."
+      },
+      {
+        "q": "Y a-t-il un essai gratuit ?",
+        "a": "Oui, Norton propose un essai de 30 jours sans engagement."
+      }
+    ],
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "eset-nod32",
+    "slug": "eset-nod32",
+    "name": "ESET NOD32",
+    "partner": "ESET",
+    "website": "https://www.eset.com/fr",
+    "affiliateUrl": "https://www.eset.com/fr",
+    "logo": "/partners/eset-nod32.png",
+    "og": "",
+    "categories": [
+      "Antivirus"
+    ],
+    "tags": [
+      "Antivirus",
+      "légèreté",
+      "performance",
+      "cybersécurité",
+      "heuristique"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "cs",
+      "pl"
+    ],
+    "priceMonthly": 2.08,
+    "priceCurrency": "EUR",
+    "price": "À partir de 2,08 €/mois",
+    "trial": true,
+    "status": "published",
+    "source": "éditeur",
+    "rating": {
+      "value": 4.7,
+      "count": 98
+    },
+    "selection": false,
+    "featured": false,
+    "verified": true,
+    "isAffiliate": false,
+    "hasReview": true,
+    "short": "ESET NOD32 est un antivirus léger et ultraperformant, reconnu pour son moteur heuristique avancé et son faible impact sur les ressources système.",
+    "highlight": "L'antivirus le plus léger du marché avec une détection heuristique de référence.",
+    "description": "ESET NOD32 est une solution antivirus développée par ESET, éditeur slovaque spécialisé en __cybersécurité__ depuis 1987. Reconnu pour son __moteur heuristique ThreatSense__, il détecte les menaces connues et inconnues avec une précision remarquable. ESET se distingue par sa __légèreté exceptionnelle__ — il consomme très peu de ressources et fonctionne parfaitement sur des machines anciennes. Son moteur est récompensé chaque année par AV-Comparatives pour ses __performances de détection__ et sa __rapidité__. Idéal pour les utilisateurs exigeants qui ne veulent pas sacrifier les performances.",
+    "strengths": [
+      "__Légèreté exceptionnelle__ — impact minimal sur les performances",
+      "__Moteur heuristique ThreatSense__ primé pour la détection zero-day",
+      "__Compatible__ avec les anciens systèmes Windows",
+      "__Mises à jour fréquentes__ et base virale toujours à jour",
+      "__Interface simple__ et intuitive",
+      "__Fiabilité__ éprouvée depuis plus de 35 ans"
+    ],
+    "strengthShort": [
+      "Ultra-léger",
+      "Heuristique avancée",
+      "Compatible vieux PC",
+      "35 ans d'expertise"
+    ],
+    "limitations": [
+      "__Fonctionnalités__ plus limitées que les suites complètes",
+      "__Pas de VPN__ ni de gestionnaire de mots de passe intégré",
+      "__Interface__ un peu datée visuellement",
+      "__Protection web__ moins avancée que certains concurrents"
+    ],
+    "limitationsShort": [
+      "Pas de VPN inclus",
+      "Fonctions basiques",
+      "Interface datée"
+    ],
+    "idealFor": [
+      "__PC anciens__ ou peu puissants",
+      "__Utilisateurs avancés__ qui veulent un antivirus pur sans bloatware",
+      "__PME__ cherchant une solution légère et fiable",
+      "__Gamers__ qui ne veulent pas d'impact sur les performances"
+    ],
+    "notFor": [
+      "__Utilisateurs__ cherchant une suite tout-en-un avec VPN",
+      "__Débutants__ qui préfèrent une interface moderne et guidée",
+      "__Familles__ avec besoin de contrôle parental avancé"
+    ],
+    "verdict": "ESET NOD32 est le choix parfait pour qui veut un __antivirus pur, léger et efficace__. Son moteur heuristique est parmi les meilleurs du marché. Si vous n'avez pas besoin d'un VPN ou de fonctions extras, c'est une valeur sûre à prix abordable.",
+    "faq": [
+      {
+        "q": "ESET est-il adapté aux vieux PC ?",
+        "a": "Oui, c'est l'un des antivirus les moins gourmands en ressources du marché."
+      },
+      {
+        "q": "ESET NOD32 inclut-il un VPN ?",
+        "a": "Non, il faut passer sur ESET Internet Security pour obtenir ces fonctions."
+      },
+      {
+        "q": "Y a-t-il un essai gratuit ?",
+        "a": "Oui, ESET propose un essai de 30 jours complet."
+      },
+      {
+        "q": "ESET protège-t-il contre les ransomwares ?",
+        "a": "Oui, grâce à son module ESET LiveGuard dédié aux ransomwares."
+      }
+    ],
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "mcafee",
+    "slug": "mcafee",
+    "name": "McAfee",
+    "partner": "McAfee",
+    "website": "https://www.mcafee.com/fr-fr",
+    "affiliateUrl": "https://www.mcafee.com/fr-fr",
+    "logo": "/partners/mcafee.png",
+    "og": "",
+    "categories": [
+      "Antivirus"
+    ],
+    "tags": [
+      "Antivirus",
+      "protection",
+      "vol d'identité",
+      "multi-appareils",
+      "famille"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "es",
+      "it"
+    ],
+    "priceMonthly": 3.99,
+    "priceCurrency": "EUR",
+    "price": "À partir de 3,99 €/mois",
+    "trial": true,
+    "status": "published",
+    "source": "éditeur",
+    "rating": {
+      "value": 4.4,
+      "count": 134
+    },
+    "selection": false,
+    "featured": false,
+    "verified": true,
+    "isAffiliate": false,
+    "hasReview": true,
+    "short": "McAfee est une suite de cybersécurité complète avec protection antivirus, VPN, surveillance de l'identité et couverture multi-appareils pour toute la famille.",
+    "highlight": "Protection complète famille avec surveillance de l'identité et appareils illimités.",
+    "description": "McAfee est l'un des antivirus les plus anciens et reconnus au monde. Repensé en profondeur ces dernières années, il propose désormais une suite __multi-appareils__ complète couvrant Windows, Mac, iOS et Android. Sa protection inclut un __antivirus en temps réel__, un __VPN sécurisé__, une __surveillance de l'identité__ et un score de protection personnalisé. McAfee se distingue par sa couverture __appareils illimités__ sur les plans familles, ce qui en fait l'un des meilleurs rapports qualité/prix pour les foyers connectés.",
+    "strengths": [
+      "__Appareils illimités__ sur les plans famille",
+      "__Surveillance de l'identité__ avec alertes en cas de fuite",
+      "__VPN intégré__ pour une navigation sécurisée",
+      "__Score de protection__ personnalisé et actionnable",
+      "__Compatible__ Windows, Mac, iOS et Android",
+      "__Support client__ 24/7 disponible"
+    ],
+    "strengthShort": [
+      "Appareils illimités",
+      "Surveillance identité",
+      "VPN inclus",
+      "Support 24/7"
+    ],
+    "limitations": [
+      "__Impact système__ parfois notable lors des scans",
+      "__Interface__ un peu chargée avec beaucoup d'options",
+      "__Prix de renouvellement__ élevé après la première année",
+      "__VPN__ limité en débit sur les plans d'entrée"
+    ],
+    "limitationsShort": [
+      "Renouvellement coûteux",
+      "Interface chargée",
+      "Impact système modéré"
+    ],
+    "idealFor": [
+      "__Familles__ avec de nombreux appareils à protéger",
+      "__Utilisateurs multi-plateformes__ Windows/Mac/mobile",
+      "__Personnes sensibles__ à la protection de leur identité",
+      "__Utilisateurs__ cherchant un support réactif 24/7"
+    ],
+    "notFor": [
+      "__Utilisateurs avancés__ préférant des solutions légères",
+      "__PC anciens__ avec ressources limitées",
+      "__Utilisateurs Linux__"
+    ],
+    "verdict": "McAfee a su se réinventer pour devenir une __suite de sécurité famille complète__. L'offre appareils illimités est particulièrement attractive. La surveillance de l'identité est un vrai plus dans un contexte de fuites de données fréquentes.",
+    "faq": [
+      {
+        "q": "McAfee couvre-t-il les appareils mobiles ?",
+        "a": "Oui, iOS et Android sont inclus selon le plan choisi."
+      },
+      {
+        "q": "McAfee inclut-il un VPN ?",
+        "a": "Oui, un VPN est inclus dans la plupart des plans McAfee+."
+      },
+      {
+        "q": "Combien d'appareils peut-on connecter ?",
+        "a": "Les plans famille offrent une couverture appareils illimités."
+      },
+      {
+        "q": "McAfee propose-t-il un essai gratuit ?",
+        "a": "Oui, un essai de 30 jours est généralement disponible."
+      }
+    ],
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "trend-micro",
+    "slug": "trend-micro",
+    "name": "Trend Micro",
+    "partner": "Trend Micro",
+    "website": "https://www.trendmicro.com/fr_fr",
+    "affiliateUrl": "https://www.trendmicro.com/fr_fr",
+    "logo": "/partners/trend-micro.png",
+    "og": "",
+    "categories": [
+      "Antivirus"
+    ],
+    "tags": [
+      "Antivirus",
+      "anti-phishing",
+      "ransomware",
+      "protection web",
+      "emails"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "ja"
+    ],
+    "priceMonthly": 2.49,
+    "priceCurrency": "EUR",
+    "price": "À partir de 2,49 €/mois",
+    "trial": true,
+    "status": "published",
+    "source": "éditeur",
+    "rating": {
+      "value": 4.5,
+      "count": 76
+    },
+    "selection": false,
+    "featured": false,
+    "verified": true,
+    "isAffiliate": false,
+    "hasReview": true,
+    "short": "Trend Micro excelle dans la protection contre le phishing et les ransomwares, avec un module email avancé et une protection web parmi les meilleures du marché.",
+    "highlight": "Protection anti-phishing et anti-ransomware de pointe, idéale pour les emails et la navigation.",
+    "description": "Trend Micro est un éditeur japonais de __cybersécurité__ reconnu mondialement depuis 1988. Sa solution grand public se distingue par une __protection anti-phishing__ primée, un __module anti-ransomware__ dédié et une excellente défense des __emails et de la navigation web__. Trend Micro utilise une technologie de __réputation cloud__ en temps réel pour analyser des milliards d'URL et bloquer les sites malveillants avant même leur chargement. Sa protection des __transactions en ligne__ et des données bancaires en fait un choix idéal pour les achats et services numériques.",
+    "strengths": [
+      "__Anti-phishing primé__ — parmi les meilleurs taux de détection",
+      "__Protection ransomware__ avec dossiers protégés",
+      "__Sécurité email__ avancée contre les arnaques",
+      "__Réputation cloud__ en temps réel pour les URL",
+      "__Protection des paiements__ en ligne",
+      "__Faible impact__ sur les performances lors des scans"
+    ],
+    "strengthShort": [
+      "Anti-phishing primé",
+      "Anti-ransomware dédié",
+      "Protection emails",
+      "Sécurité bancaire"
+    ],
+    "limitations": [
+      "__Pas de VPN__ inclus dans les plans de base",
+      "__Faux positifs__ plus fréquents que la concurrence",
+      "__Interface__ moins moderne que Norton ou Bitdefender",
+      "__Support__ limité en dehors des heures ouvrées"
+    ],
+    "limitationsShort": [
+      "Pas de VPN inclus",
+      "Faux positifs fréquents",
+      "Interface vieillissante"
+    ],
+    "idealFor": [
+      "__Utilisateurs fréquents d'emails__ et de services en ligne",
+      "__Acheteurs en ligne__ qui veulent sécuriser leurs paiements",
+      "__PME__ exposées au phishing et aux arnaques BEC",
+      "__Parents__ voulant bloquer les sites malveillants pour leurs enfants"
+    ],
+    "notFor": [
+      "__Utilisateurs__ cherchant une suite avec VPN intégré",
+      "__Experts__ qui veulent un contrôle granulaire avancé",
+      "__PC très anciens__ avec peu de RAM"
+    ],
+    "verdict": "Trend Micro est la référence en __protection anti-phishing et anti-ransomware__. Si vous faites beaucoup d'achats en ligne ou gérez des emails professionnels, c'est le choix le plus adapté. Son seul regret : l'absence de VPN sur les plans de base.",
+    "faq": [
+      {
+        "q": "Trend Micro est-il bon contre les ransomwares ?",
+        "a": "Oui, c'est l'une de ses spécialités avec un module dédié aux dossiers protégés."
+      },
+      {
+        "q": "Trend Micro inclut-il un VPN ?",
+        "a": "Un VPN est disponible uniquement dans les plans Premium."
+      },
+      {
+        "q": "Y a-t-il un essai gratuit ?",
+        "a": "Oui, 30 jours d'essai gratuit sans carte bancaire."
+      },
+      {
+        "q": "Trend Micro protège-t-il les emails ?",
+        "a": "Oui, il analyse les pièces jointes et liens dans les emails."
+      }
+    ],
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "intego",
+    "slug": "intego",
+    "name": "Intego",
+    "partner": "Intego",
+    "website": "https://www.intego.com/fr",
+    "affiliateUrl": "https://www.intego.com/fr",
+    "logo": "/partners/intego.png",
+    "og": "",
+    "categories": [
+      "Antivirus"
+    ],
+    "tags": [
+      "Antivirus",
+      "Mac",
+      "macOS",
+      "Apple",
+      "sécurité Mac"
+    ],
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "priceMonthly": 3.33,
+    "priceCurrency": "EUR",
+    "price": "À partir de 3,33 €/mois",
+    "trial": true,
+    "status": "published",
+    "source": "éditeur",
+    "rating": {
+      "value": 4.6,
+      "count": 61
+    },
+    "selection": false,
+    "featured": false,
+    "verified": true,
+    "isAffiliate": false,
+    "hasReview": true,
+    "short": "Intego est l'antivirus de référence exclusivement conçu pour Mac, offrant une protection native optimisée pour macOS avec pare-feu avancé et sauvegarde intégrée.",
+    "highlight": "Le seul antivirus 100% conçu pour Mac avec protection native et performances optimales sur macOS.",
+    "description": "Intego est le spécialiste mondial de la __sécurité Mac__ depuis 1997. Contrairement aux antivirus multi-plateformes, Intego a été __conçu exclusivement pour macOS__, ce qui lui confère des performances et une intégration système bien supérieures. Sa suite Mac Internet Security comprend __VirusBarrier__ pour la protection en temps réel, __NetBarrier__ pour le pare-feu bidirectionnel, et __ContentBarrier__ pour le contrôle parental. Intego détecte non seulement les malwares Mac natifs, mais aussi les __virus Windows__ pouvant transiter par votre Mac vers d'autres appareils du réseau.",
+    "strengths": [
+      "__Conçu exclusivement pour Mac__ — intégration native optimale",
+      "__VirusBarrier__ : protection en temps réel récompensée",
+      "__NetBarrier__ : pare-feu bidirectionnel avancé",
+      "__Détection des virus Windows__ transitant par Mac",
+      "__Faible impact__ sur les performances macOS",
+      "__Mises à jour fréquentes__ adaptées aux nouvelles versions macOS"
+    ],
+    "strengthShort": [
+      "100% conçu pour Mac",
+      "Pare-feu avancé",
+      "Détecte virus Windows",
+      "Natif macOS"
+    ],
+    "limitations": [
+      "__Uniquement pour Mac__ — pas de version Windows ou mobile",
+      "__Prix__ légèrement supérieur aux alternatives multi-plateformes",
+      "__Interface__ moins moderne que certains concurrents",
+      "__Pas de VPN__ inclus nativement"
+    ],
+    "limitationsShort": [
+      "Mac uniquement",
+      "Prix élevé",
+      "Pas de VPN"
+    ],
+    "idealFor": [
+      "__Utilisateurs Mac__ cherchant la meilleure protection native",
+      "__Professionnels Apple__ voulant sécuriser leur workflow",
+      "__Familles Apple__ avec plusieurs Mac à la maison",
+      "__Utilisateurs__ qui pensent que Mac ne nécessite pas d'antivirus (tort !)"
+    ],
+    "notFor": [
+      "__Utilisateurs Windows ou Android__",
+      "__Utilisateurs__ cherchant une solution multi-OS unique",
+      "__Budgets limités__ pouvant se contenter d'une option gratuite"
+    ],
+    "verdict": "Intego est simplement __le meilleur antivirus pour Mac__. Si vous êtes exclusivement dans l'écosystème Apple, c'est le choix incontournable. Son approche native macOS lui donne un avantage décisif sur les solutions multi-plateformes adaptées.",
+    "faq": [
+      {
+        "q": "Intego fonctionne-t-il sur Windows ?",
+        "a": "Non, Intego est exclusivement conçu pour macOS."
+      },
+      {
+        "q": "Intego est-il compatible avec les dernières versions de macOS ?",
+        "a": "Oui, Intego est mis à jour à chaque nouvelle version de macOS."
+      },
+      {
+        "q": "Intego détecte-t-il les virus Windows ?",
+        "a": "Oui, il détecte les malwares Windows pouvant transiter par votre Mac."
+      },
+      {
+        "q": "Y a-t-il un essai gratuit ?",
+        "a": "Oui, 30 jours d'essai complet sans engagement."
+      }
+    ],
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-06-01T00:00:00.000Z"
   }
 ]

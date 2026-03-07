@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 import { Menu, X, ChevronDown, LayoutGrid, Trophy, Mail } from 'lucide-react';
 
 const CATEGORIES = [
-  { slug: 'ia-generative',            label: 'IA Générative',            icon: '✨', desc: 'ChatGPT, Midjourney, Claude…', href: '/ia-generative' },
   { slug: 'intelligence-artificielle', label: 'Intelligence artificielle', icon: '🤖', desc: 'Outils IA pour la productivité', href: '/outils/intelligence-artificielle' },
   { slug: 'hebergement-web',           label: 'Hébergement web',           icon: '🌐', desc: 'Hébergez vos projets web', href: '/outils/hebergement-web' },
   { slug: 'vpn',                       label: 'VPN',                       icon: '🛡️', desc: 'Sécurisez vos connexions', href: '/outils/vpn' },
@@ -95,9 +94,6 @@ export default function Header() {
                             <p className="text-gray-700 font-medium text-sm group-hover:text-purple-700">{cat.label}</p>
                             <p className="text-gray-400 text-xs">{cat.desc}</p>
                           </div>
-                          {cat.slug === 'ia-generative' && (
-                            <span className="ml-auto text-xs bg-pink-50 border border-pink-200 text-pink-600 px-1.5 py-0.5 rounded-full font-semibold">New</span>
-                          )}
                         </Link>
                       ))}
                     </div>
@@ -158,9 +154,6 @@ export default function Header() {
               {CATEGORIES.map(cat => (
                 <Link key={cat.slug} href={cat.href} onClick={closeMobile} className="flex items-center gap-2 text-gray-500 hover:text-purple-700 py-2 text-sm">
                   <span>{cat.icon}</span>{cat.label}
-                  {cat.slug === 'ia-generative' && (
-                    <span className="text-xs bg-pink-50 border border-pink-200 text-pink-600 px-1.5 py-0.5 rounded-full font-semibold">New</span>
-                  )}
                 </Link>
               ))}
             </div>

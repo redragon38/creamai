@@ -1,11 +1,64 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { ArrowLeft, ExternalLink, Star, ChevronRight } from 'lucide-react';
+import { Star, ChevronRight } from 'lucide-react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ToolCard from '../../components/ToolCard';
 import SEO from '../../components/SEO';
+
+// Sous-catégories IA avec les outils assignés par nom
+const IA_SUBCATEGORIES = [
+  {
+    slug: 'tout',
+    label: 'Tout',
+    icon: '⭐',
+    desc: 'Tous les outils IA',
+    tools: [], // sera rempli dynamiquement
+  },
+  {
+    slug: 'redaction',
+    label: 'IA de rédaction',
+    icon: '✍️',
+    desc: 'Rédigez du contenu, des articles et des textes en quelques secondes',
+    tools: ['ChatGPT', 'Claude', 'Gemini', 'Microsoft Copilot'],
+  },
+  {
+    slug: 'image',
+    label: 'IA image',
+    icon: '🎨',
+    desc: 'Générez des visuels et illustrations époustouflants',
+    tools: ['Midjourney', 'DALL·E 3'],
+  },
+  {
+    slug: 'video',
+    label: 'IA vidéo',
+    icon: '🎬',
+    desc: 'Créez et éditez des vidéos par IA',
+    tools: ['Runway'],
+  },
+  {
+    slug: 'recherche',
+    label: 'IA recherche',
+    icon: '🔍',
+    desc: 'Recherchez et analysez de l\'information avec l\'IA',
+    tools: ['Perplexity AI'],
+  },
+  {
+    slug: 'agent',
+    label: 'Agent IA',
+    icon: '🤖',
+    desc: 'Automatisez vos workflows avec des agents intelligents',
+    tools: ['Emergent'],
+  },
+  {
+    slug: 'productivite',
+    label: 'Productivité IA',
+    icon: '⚡',
+    desc: 'Boostez votre productivité et gérez vos projets',
+    tools: ['ClickUp'],
+  },
+];
 
 // Fonction utilitaire pour normaliser les slugs (enlever accents)
 function normalizeSlug(text) {
@@ -84,10 +137,8 @@ const CATEGORY_META = {
   },
 };
 
-// Les 5 catégories fixes (slug -> label)
+// Les 3 catégories gérées par cette page (IA a sa propre page dédiée)
 const FIXED_CATEGORIES = [
-  { slug: 'intelligence-artificielle', label: 'Intelligence artificielle' },
-  { slug: 'ia-generative', label: 'IA générative' },
   { slug: 'hebergement-web', label: 'Hébergement web' },
   { slug: 'vpn', label: 'VPN' },
   { slug: 'antivirus', label: 'Antivirus' },
@@ -109,11 +160,9 @@ function getMetaForCategory(slug) {
 }
 
 export async function getStaticPaths() {
-  // Uniquement les 3 catégories fixes
   const paths = FIXED_CATEGORIES.map(cat => ({
     params: { category: cat.slug },
   }));
-
   return { paths, fallback: false };
 }
 
@@ -124,19 +173,16 @@ export async function getStaticProps({ params }) {
   const slug = params.category;
   const meta = getMetaForCategory(slug);
 
-  // Trouver le label correspondant au slug
-  const fixedCat = FIXED_CATEGORIES.find(c => c.slug === slug);
-  const catLabel = fixedCat ? fixedCat.label : slug.replace(/-/g, ' ');
-
   // Filtrer les outils de cette catégorie
   const tools = allTools.filter(tool =>
-    (tool.categories || []).some(
-      cat => normalizeSlug(cat) === slug
-    )
+    (tool.categories || []).map(c => normalizeSlug(c)).includes(slug)
   );
 
-  // Sidebar : uniquement les 3 catégories fixes avec leur comptage
-  const allCategories = FIXED_CATEGORIES.map(fixCat => ({
+  // Sidebar : les 3 catégories + lien vers IA
+  const allCategories = [
+    { slug: 'intelligence-artificielle', label: 'Intelligence artificielle' },
+    ...FIXED_CATEGORIES,
+  ].map(fixCat => ({
     slug: fixCat.slug,
     label: fixCat.label,
     count: allTools.filter(t =>
@@ -161,7 +207,6 @@ function StarRating({ value }) {
     </div>
   );
 }
-
 export default function CategoryPage({ tools, meta, slug, allCategories }) {
   return (
     <>
@@ -172,19 +217,11 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
       />
       <div className="min-h-screen flex flex-col">
         <Header />
-
         <main className="flex-1">
-          {/* ── HERO CATÉGORIE ── */}
           <section className="relative py-20 overflow-hidden">
-            {/* Glow de fond */}
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: `radial-gradient(ellipse 800px 400px at 50% -50px, ${meta.glow}, transparent)`,
-              }}
-            />
+            <div className="absolute inset-0 pointer-events-none"
+              style={{ background: `radial-gradient(ellipse 800px 400px at 50% -50px, ${meta.glow}, transparent)` }} />
             <div className="container mx-auto px-6 relative z-10">
-              {/* Breadcrumb */}
               <nav className="flex items-center gap-2 text-sm text-gray-600 mb-8">
                 <Link href="/" className="hover:text-gray-900 transition-colors">Accueil</Link>
                 <ChevronRight className="w-4 h-4" />
@@ -192,9 +229,7 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-gray-900">{meta.label}</span>
               </nav>
-
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                {/* Icône */}
                 <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${meta.color} flex items-center justify-center text-4xl flex-shrink-0 shadow-2xl`}
                   style={{ boxShadow: `0 0 40px ${meta.glow}` }}>
                   {meta.icon}
@@ -203,12 +238,8 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
                   <div className={`inline-block text-xs font-semibold tracking-widest uppercase ${meta.textColor} ${meta.bg} border ${meta.border} px-3 py-1 rounded-full mb-3`}>
                     {tools.length} outil{tools.length > 1 ? 's' : ''} disponible{tools.length > 1 ? 's' : ''}
                   </div>
-                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3 leading-tight">
-                    {meta.label}
-                  </h1>
-                  <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
-                    {meta.desc}
-                  </p>
+                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3 leading-tight">{meta.label}</h1>
+                  <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">{meta.desc}</p>
                 </div>
               </div>
             </div>
@@ -216,20 +247,13 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
 
           <div className="container mx-auto px-6 pb-32">
             <div className="flex flex-col lg:flex-row gap-10">
-
-              {/* ── SIDEBAR CATÉGORIES ── */}
               <aside className="lg:w-64 flex-shrink-0">
                 <div className="bg-white rounded-2xl border border-purple-100 shadow-sm p-5 sticky top-24">
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-4">Catégories</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Catégories</h3>
                   <ul className="space-y-1">
                     <li>
-                      <Link
-                        href="/outils"
-                        className="flex items-center justify-between px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:text-gray-600 hover:bg-purple-900/30 transition-all group"
-                      >
-                        <span className="flex items-center gap-2">
-                          <span>🗂️</span> Tous les outils
-                        </span>
+                      <Link href="/outils" className="flex items-center justify-between px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-purple-50 transition-all">
+                        <span className="flex items-center gap-2"><span>🗂️</span> Tous les outils</span>
                       </Link>
                     </li>
                     {allCategories.map(cat => {
@@ -237,21 +261,12 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
                       const isActive = cat.slug === slug;
                       return (
                         <li key={cat.slug}>
-                          <Link
-                            href={`/outils/${cat.slug}`}
-                            className={`flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-all group ${
-                              isActive
-                                ? `${m.bg} ${m.textColor} border ${m.border} font-semibold`
-                                : 'text-gray-900 hover:text-gray-900 hover:bg-purple-900/30'
-                            }`}
-                          >
-                            <span className="flex items-center gap-2">
-                              <span>{m.icon}</span>
-                              <span>{cat.label}</span>
-                            </span>
-                            <span className={`text-xs px-1.5 py-0.5 rounded-md ${isActive ? m.bg : 'bg-purple-900/30'} ${m.textColor}`}>
-                              {cat.count}
-                            </span>
+                          <Link href={`/outils/${cat.slug}`}
+                            className={`flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-all ${
+                              isActive ? `${m.bg} ${m.textColor} border ${m.border} font-semibold` : 'text-gray-900 hover:bg-purple-50'
+                            }`}>
+                            <span className="flex items-center gap-2"><span>{m.icon}</span><span>{cat.label}</span></span>
+                            <span className={`text-xs px-1.5 py-0.5 rounded-md ${isActive ? m.bg : 'bg-gray-100'} ${m.textColor}`}>{cat.count}</span>
                           </Link>
                         </li>
                       );
@@ -260,17 +275,12 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
                 </div>
               </aside>
 
-              {/* ── CONTENU PRINCIPAL ── */}
               <div className="flex-1 min-w-0">
-
-                {/* Description longue */}
                 {meta.longDesc && (
                   <div className={`gradient-card border ${meta.border} rounded-2xl p-6 mb-8`}>
                     <p className="text-gray-600 leading-relaxed">{meta.longDesc}</p>
                   </div>
                 )}
-
-                {/* Grille d'outils */}
                 {tools.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
                     {tools.map(tool => (
@@ -281,38 +291,28 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
                   <div className="text-center py-20 bg-white rounded-2xl border border-purple-100 shadow-sm">
                     <p className="text-4xl mb-4">🔍</p>
                     <p className="text-gray-900 text-lg">Aucun outil dans cette catégorie pour l&apos;instant.</p>
-                    <Link href="/outils" className="inline-block mt-4 text-gray-900 hover:text-gray-900 transition-colors">
-                      ← Voir tous les outils
-                    </Link>
                   </div>
                 )}
-
-                {/* Navigation vers autres catégories */}
                 {allCategories.filter(c => c.slug !== slug).length > 0 && (
                   <div className="mt-16">
                     <h2 className="text-xl font-bold text-gray-900 mb-6">Autres catégories</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {allCategories
-                        .filter(c => c.slug !== slug)
-                        .map(cat => {
-                          const m = getMetaForCategory(cat.slug);
-                          return (
-                            <Link
-                              key={cat.slug}
-                              href={`/outils/${cat.slug}`}
-                              className="bg-white rounded-2xl border border-purple-100 shadow-sm p-5 flex items-center gap-4 hover:-translate-y-1 hover:border-purple-500/40 transition-all duration-300 group"
-                            >
-                              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${m.color} flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                                {m.icon}
-                              </div>
-                              <div>
-                                <p className="font-semibold text-gray-900">{cat.label}</p>
-                                <p className="text-xs text-gray-600 mt-0.5">{cat.count} outil{cat.count > 1 ? 's' : ''}</p>
-                              </div>
-                              <ChevronRight className="w-4 h-4 text-gray-900 group-hover:text-gray-900 transition-colors ml-auto" />
-                            </Link>
-                          );
-                        })}
+                      {allCategories.filter(c => c.slug !== slug).map(cat => {
+                        const m = getMetaForCategory(cat.slug);
+                        return (
+                          <Link key={cat.slug} href={`/outils/${cat.slug}`}
+                            className="bg-white rounded-2xl border border-purple-100 shadow-sm p-5 flex items-center gap-4 hover:-translate-y-1 hover:border-purple-500/40 transition-all duration-300 group">
+                            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${m.color} flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                              {m.icon}
+                            </div>
+                            <div>
+                              <p className="font-semibold text-gray-900">{cat.label}</p>
+                              <p className="text-xs text-gray-500 mt-0.5">{cat.count} outil{cat.count > 1 ? 's' : ''}</p>
+                            </div>
+                            <ChevronRight className="w-4 h-4 text-gray-400 ml-auto group-hover:text-purple-600 transition-colors" />
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
@@ -320,7 +320,6 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
             </div>
           </div>
         </main>
-
         <Footer />
       </div>
     </>
