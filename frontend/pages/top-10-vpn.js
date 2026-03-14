@@ -38,7 +38,7 @@ export default function Top10VPN({ tools }) {
       seo={{
         title: 'Top 10 VPN 2025 — Classement & Comparatif',
         description: `Découvrez le Top 10 des meilleurs VPN en 2025. ${META.desc}`,
-        canonical: 'https://thecreamai.com/top-10-vpn',
+        canonical: 'https://comparateur-tech.com/top-10-vpn',
         keywords: 'top 10 vpn, meilleur vpn 2025, comparatif vpn',
       }}
     />

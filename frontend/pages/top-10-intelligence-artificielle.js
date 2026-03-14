@@ -38,7 +38,7 @@ export default function Top10IA({ tools }) {
       seo={{
         title: 'Top 10 Intelligence Artificielle 2025 — Classement & Comparatif',
         description: `Découvrez le Top 10 des meilleurs outils IA en 2025. ${META.desc}`,
-        canonical: 'https://thecreamai.com/top-10-intelligence-artificielle',
+        canonical: 'https://comparateur-tech.com/top-10-intelligence-artificielle',
         keywords: 'top 10 ia, meilleur outil ia 2025, comparatif intelligence artificielle',
       }}
     />

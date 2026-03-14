@@ -5,7 +5,7 @@ const nextConfig = {
   // Optimisations d'images
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'thecreamai.com' },
+      { protocol: 'https', hostname: 'comparateur-tech.com' },
       { protocol: 'https', hostname: '**.cloudinary.com' },
     ],
     formats: ['image/avif', 'image/webp'],
@@ -62,7 +62,7 @@ const nextConfig = {
   },
 
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://thecreamai.com',
+    SITE_URL: process.env.SITE_URL || 'https://comparateur-tech.com',
   },
 }
 

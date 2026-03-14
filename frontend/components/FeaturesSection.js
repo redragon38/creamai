@@ -66,7 +66,7 @@ export default function FeaturesSection() {
             Comment on sélectionne<br />les meilleurs outils ?
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Pas de sélection au hasard. Chaque outil passe par un processus rigoureux en 4 étapes avant d'apparaître sur Thecreamai.
+            Pas de sélection au hasard. Chaque outil passe par un processus rigoureux en 4 étapes avant d'apparaître sur Comparateur-Tech.
           </p>
         </div>
 

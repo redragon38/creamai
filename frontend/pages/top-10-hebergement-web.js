@@ -38,7 +38,7 @@ export default function Top10Hebergement({ tools }) {
       seo={{
         title: 'Top 10 Hébergement Web 2025 — Classement & Comparatif',
         description: `Découvrez le Top 10 des meilleurs hébergeurs web en 2025. ${META.desc}`,
-        canonical: 'https://thecreamai.com/top-10-hebergement-web',
+        canonical: 'https://comparateur-tech.com/top-10-hebergement-web',
         keywords: 'top 10 hebergement web, meilleur hebergeur 2025, comparatif hebergement',
       }}
     />

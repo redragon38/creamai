@@ -129,7 +129,7 @@ export default function ComparatifsPage({ tools }) {
       <SEO
         title="Comparatifs outils — VPN, Hébergement, Antivirus, IA"
         description="Comparez les meilleurs outils VPN, hébergement web, antivirus et IA. Avis vérifiés, notes et recommandations d'experts."
-        canonical="https://thecreamai.com/comparatifs"
+        canonical="https://comparateur-tech.com/comparatifs"
       />
       <Header />
       <main>

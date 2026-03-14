@@ -31,7 +31,7 @@ function NewsletterForm({ size = 'normal' }) {
       const res = await fetch(FORMSPREE_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email, _subject: '[Thecreamai] Nouvelle inscription newsletter' }),
+        body: JSON.stringify({ email, _subject: '[Comparateur-Tech] Nouvelle inscription newsletter' }),
       });
       setStatus(res.ok ? 'success' : 'error');
       if (res.ok) setEmail('');
@@ -75,9 +75,9 @@ export default function NewsletterPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Newsletter Thecreamai — Outils IA, VPN & Hébergement chaque semaine"
+        title="Newsletter Comparateur-Tech — Outils IA, VPN & Hébergement chaque semaine"
         description="Rejoignez 2 800+ créateurs et entrepreneurs. Recevez chaque semaine la sélection des meilleurs outils, offres exclusives et tendances du digital."
-        canonical="https://thecreamai.com/newsletter"
+        canonical="https://comparateur-tech.com/newsletter"
         keywords="newsletter outils IA, newsletter VPN, newsletter hébergement web, digital, créateurs"
       />
       <Header />

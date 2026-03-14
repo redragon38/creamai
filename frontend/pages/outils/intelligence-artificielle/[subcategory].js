@@ -39,9 +39,9 @@ export default function IASubcategoryPage({ sub, tools, otherSubs }) {
   return (
     <>
       <SEO
-        title={`${sub.label} – Meilleurs outils IA | TheCreamAI`}
+        title={`${sub.label} – Meilleurs outils IA | Comparateur-Tech`}
         description={sub.desc}
-        canonical={`https://thecreamai.com/outils/intelligence-artificielle/${sub.slug}`}
+        canonical={`https://comparateur-tech.com/outils/intelligence-artificielle/${sub.slug}`}
       />
       <div className="min-h-screen flex flex-col">
         <Header />

@@ -57,9 +57,9 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 group">
               <div className="w-9 h-9 flex items-center justify-center">
-                <img src="/logo.png" alt="Thecreamai" className="w-9 h-9 object-contain" />
+                <img src="/logo.png" alt="Comparateur-Tech" className="w-9 h-9 object-contain" />
               </div>
-              <span className="text-xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors">Thecreamai</span>
+              <span className="text-xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors">Comparateur-Tech</span>
             </Link>
 
             <div className="hidden md:flex items-center space-x-1">

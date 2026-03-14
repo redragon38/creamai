@@ -110,9 +110,9 @@ export default function IAGenerativePage({ tools }) {
   return (
     <>
       <SEO
-        title="IA Générative — Meilleurs outils | Thecreamai"
+        title="IA Générative — Meilleurs outils | Comparateur-Tech"
         description="Découvrez les meilleurs outils d'IA générative : ChatGPT, Midjourney, Claude, Gemini… Comparez et trouvez l'outil parfait pour créer textes, images et vidéos."
-        canonical="https://thecreamai.com/ia-generative"
+        canonical="https://comparateur-tech.com/ia-generative"
       />
       <div className="min-h-screen flex flex-col bg-gray-50">
         <Header />

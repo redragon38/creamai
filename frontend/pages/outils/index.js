@@ -57,9 +57,9 @@ export default function ToolsPage({ tools, categoryMap }) {
   return (
     <>
       <SEO
-        title="Tous les outils — Thecreamai"
-        description="Explorez tous les outils sélectionnés par Thecreamai : VPN, IA, hébergement, antivirus."
-        canonical="https://thecreamai.com/outils"
+        title="Tous les outils — Comparateur-Tech"
+        description="Explorez tous les outils sélectionnés par Comparateur-Tech : VPN, IA, hébergement, antivirus."
+        canonical="https://comparateur-tech.com/outils"
       />
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Header />

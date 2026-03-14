@@ -3,7 +3,7 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     stars: 5,
-    text: "Grâce à Thecreamai, j'ai trouvé le bon hébergeur en 10 minutes. Les comparatifs sont clairs et les avis fiables. Je recommande !",
+    text: "Grâce à Comparateur-Tech, j'ai trouvé le bon hébergeur en 10 minutes. Les comparatifs sont clairs et les avis fiables. Je recommande !",
     name: "Sarah M.",
     role: "Freelance Web Designer",
     initial: "S",
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "J'utilise Thecreamai comme référence avant chaque achat d'outil IA. La sélection est sérieuse et les notes honnêtes.",
+    text: "J'utilise Comparateur-Tech comme référence avant chaque achat d'outil IA. La sélection est sérieuse et les notes honnêtes.",
     name: "Amélie R.",
     role: "Créatrice de contenu",
     initial: "A",
@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Ce qu'en disent nos lecteurs</h2>
           <p className="text-gray-500 max-w-lg mx-auto text-lg">
-            Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à Thecreamai.
+            Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à Comparateur-Tech.
           </p>
         </div>
 

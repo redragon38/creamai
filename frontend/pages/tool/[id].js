@@ -106,9 +106,9 @@ export default function ToolPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title={`${tool.name} – Avis, Prix & Alternatives | TheCreamAI`}
+        title={`${tool.name} – Avis, Prix & Alternatives | Comparateur-Tech`}
         description={tool.short || `Découvrez notre avis sur ${tool.name} : fonctionnalités, prix, points forts et alternatives.`}
-        canonical={`https://thecreamai.com/tool/${tool.id}`}
+        canonical={`https://comparateur-tech.com/tool/${tool.id}`}
       />
       <Header />
 

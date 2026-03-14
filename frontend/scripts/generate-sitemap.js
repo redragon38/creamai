@@ -1,6 +1,6 @@
 /**
  * ============================================================
- *  Thecreamai — Générateur de Sitemap XML
+ *  Comparateur-Tech — Générateur de Sitemap XML
  * ============================================================
  *  Génère /public/sitemap.xml complet à chaque déploiement.
  *
@@ -18,7 +18,7 @@ const fs   = require('fs');
 const path = require('path');
 
 // ── Config ─────────────────────────────────────────────────────
-const BASE_URL   = process.env.SITE_URL || 'https://thecreamai.com';
+const BASE_URL   = process.env.SITE_URL || 'https://comparateur-tech.com';
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 const TOOLS_PATH = path.join(PUBLIC_DIR, 'data', 'tools.json');
 const OUT_PATH   = path.join(PUBLIC_DIR, 'sitemap.xml');

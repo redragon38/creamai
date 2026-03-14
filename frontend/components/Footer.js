@@ -16,7 +16,7 @@ export default function Footer() {
       const res = await fetch(FORMSPREE_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email, _subject: '[Thecreamai] Inscription newsletter (footer)' }),
+        body: JSON.stringify({ email, _subject: '[Comparateur-Tech] Inscription newsletter (footer)' }),
       });
       setStatus(res.ok ? 'success' : 'error');
       if (res.ok) setEmail('');
@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-3">
               <div className="w-9 h-9 rounded-xl gradient-purple flex items-center justify-center text-white font-bold text-lg">✦</div>
-              <span className="text-xl font-extrabold text-gray-900">Thecreamai</span>
+              <span className="text-xl font-extrabold text-gray-900">Comparateur-Tech</span>
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               La plateforme de référence pour découvrir et comparer les meilleurs outils du web.
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Ligne légale mobile — liens horizontaux scroll */}
         <div className="border-t border-purple-100 pt-5 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-gray-400 text-xs">© 2025 Thecreamai. Tous droits réservés.</p>
+          <p className="text-gray-400 text-xs">© 2025 Comparateur-Tech. Tous droits réservés.</p>
           <div className="flex gap-4 sm:gap-6 flex-wrap justify-center">
             {['Mentions légales', 'CGU', 'Contact'].map((item, i) => (
               <Link key={i} href={item === 'Contact' ? '/contact' : '#'}

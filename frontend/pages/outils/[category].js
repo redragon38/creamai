@@ -96,7 +96,7 @@ const CATEGORY_META = {
     border: 'border-emerald-500/30',
     bg: 'bg-emerald-900/20',
     textColor: 'text-gray-900',
-    desc: 'Hébergez vos sites et applications web avec les meilleures plateformes sélectionnées par TheCreamAI.',
+    desc: 'Hébergez vos sites et applications web avec les meilleures plateformes sélectionnées par Comparateur-Tech.',
     longDesc: "Un hébergement web fiable est la fondation de tout projet en ligne. Qu'il s'agisse d'un blog, d'une boutique e-commerce ou d'une application web, choisir le bon hébergeur est crucial pour la performance, la sécurité et la disponibilité de votre site.",
   },
   'vpn': {
@@ -108,7 +108,7 @@ const CATEGORY_META = {
     border: 'border-blue-500/30',
     bg: 'bg-blue-900/20',
     textColor: 'text-gray-900',
-    desc: 'Protégez votre vie privée, sécurisez vos connexions et naviguez librement avec les meilleurs VPN sélectionnés par TheCreamAI.',
+    desc: 'Protégez votre vie privée, sécurisez vos connexions et naviguez librement avec les meilleurs VPN sélectionnés par Comparateur-Tech.',
     longDesc: 'Un VPN (Virtual Private Network) est indispensable pour tout créateur ou entrepreneur soucieux de sa sécurité numérique. Que vous travailliez depuis un café, en déplacement ou depuis chez vous, un VPN chiffre vos connexions et masque votre adresse IP.',
   },
   'ia-generative': {
@@ -211,9 +211,9 @@ export default function CategoryPage({ tools, meta, slug, allCategories }) {
   return (
     <>
       <SEO
-        title={`${meta.label} – Meilleurs outils | TheCreamAI`}
+        title={`${meta.label} – Meilleurs outils | Comparateur-Tech`}
         description={meta.desc}
-        canonical={`https://thecreamai.com/outils/${slug}`}
+        canonical={`https://comparateur-tech.com/outils/${slug}`}
       />
       <div className="min-h-screen flex flex-col">
         <Header />

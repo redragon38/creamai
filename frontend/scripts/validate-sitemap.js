@@ -100,7 +100,7 @@ function validateSitemap() {
   if (valid) {
     console.log(`\n✅ Sitemap valide !`);
     console.log(`📍 Emplacement : ${sitemapPath}`);
-    console.log(`🌐 URL de production : https://thecreamai.com/sitemap.xml\n`);
+    console.log(`🌐 URL de production : https://comparateur-tech.com/sitemap.xml\n`);
   } else {
     console.log(`\n❌ Le sitemap contient des erreurs`);
     console.log(`💡 Régénérez-le avec : npm run sitemap\n`);

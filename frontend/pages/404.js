@@ -7,7 +7,7 @@ import { Home, Search, ArrowRight } from 'lucide-react';
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEO title="Page non trouvée — Thecreamai" description="Cette page n'existe pas." noindex />
+      <SEO title="Page non trouvée — Comparateur-Tech" description="Cette page n'existe pas." noindex />
       <Header />
       <main className="container mx-auto px-6 py-24 text-center">
         {/* Animated 404 */}

@@ -29,9 +29,9 @@ export default function PourquoiNousPage() {
     <div className="min-h-screen">
       <SEO
         title="Pourquoi nous choisir — Notre méthode & nos valeurs"
-        description="Découvrez comment Thecreamai sélectionne et évalue les meilleurs outils du web. Notre processus de test rigoureux, nos valeurs et notre engagement envers vous."
-        canonical="https://thecreamai.com/pourquoi-nous"
-        keywords="à propos Thecreamai, méthode sélection outils, critères notation, équipe"
+        description="Découvrez comment Comparateur-Tech sélectionne et évalue les meilleurs outils du web. Notre processus de test rigoureux, nos valeurs et notre engagement envers vous."
+        canonical="https://comparateur-tech.com/pourquoi-nous"
+        keywords="à propos Comparateur-Tech, méthode sélection outils, critères notation, équipe"
       />
       <Header />
       <main>
@@ -47,7 +47,7 @@ export default function PourquoiNousPage() {
               <span className="text-gray-900">vous pouvez avoir confiance</span>
             </h1>
             <p className="text-gray-600 text-lg max-w-xl mx-auto">
-              Chaque outil que vous trouvez sur Thecreamai a été testé, évalué et approuvé selon des critères stricts. Voici comment on travaille.
+              Chaque outil que vous trouvez sur Comparateur-Tech a été testé, évalué et approuvé selon des critères stricts. Voici comment on travaille.
             </p>
           </div>
         </section>

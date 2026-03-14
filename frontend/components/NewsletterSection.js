@@ -24,7 +24,7 @@ export default function NewsletterSection() {
       const res = await fetch(FORMSPREE_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email, _subject: '[Thecreamai] Nouvelle inscription newsletter (section)' }),
+        body: JSON.stringify({ email, _subject: '[Comparateur-Tech] Nouvelle inscription newsletter (section)' }),
       });
       if (res.ok) { setSubmitted(true); setEmail(''); }
       else throw new Error();

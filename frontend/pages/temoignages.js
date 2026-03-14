@@ -4,15 +4,15 @@ import SEO from '../components/SEO';
 import { Star } from 'lucide-react';
 
 const TESTIMONIALS = [
-  { name: 'Sarah M.', role: 'Freelance Web Designer', initial: 'S', color: 'from-purple-600 to-pink-500', stars: 5, text: "Grâce à Thecreamai, j'ai trouvé le bon hébergeur en 10 minutes. Les comparatifs sont clairs et les avis fiables. Je ne perds plus des heures à chercher !", category: 'Hébergement web', tool: 'o2switch' },
+  { name: 'Sarah M.', role: 'Freelance Web Designer', initial: 'S', color: 'from-purple-600 to-pink-500', stars: 5, text: "Grâce à Comparateur-Tech, j'ai trouvé le bon hébergeur en 10 minutes. Les comparatifs sont clairs et les avis fiables. Je ne perds plus des heures à chercher !", category: 'Hébergement web', tool: 'o2switch' },
   { name: 'Thomas K.', role: 'Développeur & Digital Nomad', initial: 'T', color: 'from-blue-600 to-purple-600', stars: 5, text: "Le meilleur site pour comparer les VPN. J'ai passé des heures ailleurs sans décision — ici en 5 min c'était réglé. NordVPN au final, parfait !", category: 'VPN', tool: 'NordVPN' },
-  { name: 'Amélie R.', role: 'Créatrice de contenu', initial: 'A', color: 'from-pink-600 to-purple-600', stars: 5, text: "J'utilise Thecreamai comme référence avant chaque achat d'outil IA. La sélection est sérieuse et les notes honnêtes. Rien à redire !", category: 'IA', tool: 'ClickUp' },
+  { name: 'Amélie R.', role: 'Créatrice de contenu', initial: 'A', color: 'from-pink-600 to-purple-600', stars: 5, text: "J'utilise Comparateur-Tech comme référence avant chaque achat d'outil IA. La sélection est sérieuse et les notes honnêtes. Rien à redire !", category: 'IA', tool: 'ClickUp' },
   { name: 'Marc D.', role: 'Entrepreneur & CEO', initial: 'M', color: 'from-emerald-600 to-teal-500', stars: 5, text: "J'ai découvert Hostinger ici et c'est devenu mon hébergeur de confiance. Le comparatif avec Kinsta était ultra clair. Merci !", category: 'Hébergement web', tool: 'Hostinger' },
   { name: 'Julie F.', role: 'Marketing Manager', initial: 'J', color: 'from-yellow-600 to-orange-500', stars: 5, text: "La newsletter hebdomadaire est une pépite. Je reçois exactement les infos dont j'ai besoin sans être noyée. Vraiment top !", category: 'Newsletter', tool: '—' },
-  { name: 'Romain B.', role: 'Consultant IT', initial: 'R', color: 'from-cyan-600 to-blue-500', stars: 5, text: "Pour choisir un antivirus entreprise, Thecreamai m'a sauvé la mise. Bitdefender était clairement le meilleur rapport qualité-prix.", category: 'Antivirus', tool: 'Bitdefender' },
+  { name: 'Romain B.', role: 'Consultant IT', initial: 'R', color: 'from-cyan-600 to-blue-500', stars: 5, text: "Pour choisir un antivirus entreprise, Comparateur-Tech m'a sauvé la mise. Bitdefender était clairement le meilleur rapport qualité-prix.", category: 'Antivirus', tool: 'Bitdefender' },
   { name: 'Léa V.', role: 'Photographe indépendante', initial: 'L', color: 'from-rose-600 to-pink-500', stars: 4, text: "Interface intuitive, comparatifs bien faits. J'aurais aimé plus d'outils créatifs mais pour les catégories existantes c'est excellent.", category: 'IA', tool: 'ClickUp' },
   { name: 'Nicolas P.', role: 'Développeur Full Stack', initial: 'N', color: 'from-violet-600 to-purple-500', stars: 5, text: "Proton VPN trouvé en 3 minutes grâce au comparatif. Les badges 'Vérifié' et 'Essai gratuit' aident vraiment à décider rapidement.", category: 'VPN', tool: 'Proton VPN' },
-  { name: 'Camille T.', role: 'Coach business', initial: 'C', color: 'from-orange-600 to-red-500', stars: 5, text: "Je recommande Thecreamai à tous mes clients qui cherchent des outils. C'est devenu la référence pour moi quand je conseil.", category: 'IA', tool: 'Emergent' },
+  { name: 'Camille T.', role: 'Coach business', initial: 'C', color: 'from-orange-600 to-red-500', stars: 5, text: "Je recommande Comparateur-Tech à tous mes clients qui cherchent des outils. C'est devenu la référence pour moi quand je conseil.", category: 'IA', tool: 'Emergent' },
 ];
 
 const STATS = [
@@ -27,9 +27,9 @@ export default function TemoignagesPage() {
     <div className="min-h-screen">
       <SEO
         title="Témoignages — Ce qu'en disent nos lecteurs"
-        description="Découvrez les avis et témoignages de nos lecteurs sur Thecreamai. Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à nos comparatifs."
-        canonical="https://thecreamai.com/temoignages"
-        keywords="avis Thecreamai, témoignages, retours utilisateurs, comparatif outils"
+        description="Découvrez les avis et témoignages de nos lecteurs sur Comparateur-Tech. Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à nos comparatifs."
+        canonical="https://comparateur-tech.com/temoignages"
+        keywords="avis Comparateur-Tech, témoignages, retours utilisateurs, comparatif outils"
       />
       <Header />
       <main>
@@ -45,7 +45,7 @@ export default function TemoignagesPage() {
               <span className="text-gray-900">confiance</span>
             </h1>
             <p className="text-gray-600 text-lg max-w-lg mx-auto">
-              Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à Thecreamai.
+              Des entrepreneurs et créateurs qui ont trouvé les bons outils grâce à Comparateur-Tech.
             </p>
           </div>
         </section>

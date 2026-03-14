@@ -46,7 +46,7 @@ export default function ContactPage() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           name: form.prenom, email: form.email, subject: form.sujet, message: form.message,
-          _replyto: form.email, _subject: `[Thecreamai] ${form.sujet} – ${form.prenom}`,
+          _replyto: form.email, _subject: `[Comparateur-Tech] ${form.sujet} – ${form.prenom}`,
         }),
       });
       if (res.ok) { setStatus('success'); setForm({ prenom: '', email: '', sujet: '', message: '' }); }
@@ -62,9 +62,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Contact — Thecreamai"
-        description="Contactez l'équipe Thecreamai pour toute question ou partenariat."
-        canonical="https://thecreamai.com/contact"
+        title="Contact — Comparateur-Tech"
+        description="Contactez l'équipe Comparateur-Tech pour toute question ou partenariat."
+        canonical="https://comparateur-tech.com/contact"
       />
       <Header />
 

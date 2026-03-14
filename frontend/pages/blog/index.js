@@ -23,9 +23,9 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Blog Thecreamai — Guides, Comparatifs & Conseils outils"
+        title="Blog Comparateur-Tech — Guides, Comparatifs & Conseils outils"
         description="Retrouvez nos guides experts, comparatifs détaillés et conseils pratiques sur les meilleurs outils IA, VPN, hébergement web et antivirus."
-        canonical="https://thecreamai.com/blog"
+        canonical="https://comparateur-tech.com/blog"
         keywords="blog outils IA, guide VPN, tutoriel hébergement web, conseils antivirus"
       />
       <Header />

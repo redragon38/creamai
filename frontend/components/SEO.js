@@ -1,19 +1,19 @@
 import Head from 'next/head';
 
 export default function SEO({
-  title = 'Thecreamai - Les Meilleurs Tools IA pour Créateurs & Entrepreneurs',
+  title = 'Comparateur-Tech - Les Meilleurs Tools IA pour Créateurs & Entrepreneurs',
   description = 'Discover une sélection d\'outils IA triés sur le volet pour booster votre productivité, créativité et business. VPN, outils de design, marketing et bien plus.',
-  canonical = 'https://thecreamai.com/',
-  ogImage = 'https://thecreamai.com/og-image.jpg',
+  canonical = 'https://comparateur-tech.com/',
+  ogImage = 'https://comparateur-tech.com/og-image.jpg',
   ogType = 'website',
   twitterCard = 'summary_large_image',
   noindex = false,
   nofollow = false,
   keywords = 'IA, Intelligence Artificielle, Tools IA, VPN, Hébergement web, Créateurs, Entrepreneurs',
-  author = 'Thecreamai',
+  author = 'Comparateur-Tech',
   structuredData = null,
 }) {
-  const fullTitle = title.includes('Thecreamai') ? title : `${title} | Thecreamai`;
+  const fullTitle = title.includes('Comparateur-Tech') ? title : `${title} | Comparateur-Tech`;
   const robotsContent = `${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' : 'follow'}`;
 
   return (
@@ -37,7 +37,7 @@ export default function SEO({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="Thecreamai" />
+      <meta property="og:site_name" content="Comparateur-Tech" />
       <meta property="og:locale" content="fr_FR" />
 
       {/* Twitter */}

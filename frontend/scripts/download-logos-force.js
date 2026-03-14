@@ -118,7 +118,7 @@ function sleep(ms) {
 // ── Main ─────────────────────────────────────────────────
 async function main() {
   console.log(`\n${C.bold}${C.cyan}╔══════════════════════════════════════╗${C.reset}`);
-  console.log(`${C.bold}${C.cyan}║  🖼️  TheCreamAI — Logo Force Download  ║${C.reset}`);
+  console.log(`${C.bold}${C.cyan}║  🖼️  Comparateur-Tech — Logo Force Download  ║${C.reset}`);
   console.log(`${C.bold}${C.cyan}╚══════════════════════════════════════╝${C.reset}\n`);
 
   // Lire tools.json

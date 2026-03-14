@@ -21,9 +21,9 @@ export default function IAIndexPage({ subcatCounts }) {
   return (
     <>
       <SEO
-        title="Intelligence artificielle – Types d'IA | TheCreamAI"
+        title="Intelligence artificielle – Types d'IA | Comparateur-Tech"
         description="Découvrez tous les types d'IA : rédaction, image, vidéo, recherche, agents et productivité."
-        canonical="https://thecreamai.com/outils/intelligence-artificielle"
+        canonical="https://comparateur-tech.com/outils/intelligence-artificielle"
       />
       <div className="min-h-screen flex flex-col bg-gray-50">
         <Header />

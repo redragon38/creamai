@@ -27,8 +27,8 @@ const CAT_META_FILTER = {
 
 const STRUCTURED_DATA = {
   "@context": "https://schema.org", "@type": "WebSite",
-  "name": "Thecreamai", "url": "https://thecreamai.com",
-  "publisher": { "@type": "Organization", "name": "Thecreamai" }
+  "name": "Comparateur-Tech", "url": "https://comparateur-tech.com",
+  "publisher": { "@type": "Organization", "name": "Comparateur-Tech" }
 };
 
 export default function Home({ tools }) {
@@ -42,9 +42,9 @@ export default function Home({ tools }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Thecreamai — Les Meilleurs Outils IA, VPN & Hébergement Web"
+        title="Comparateur-Tech — Les Meilleurs Outils IA, VPN & Hébergement Web"
         description="Découvrez et comparez les meilleurs outils IA, VPN, hébergements web et antivirus. Sélection vérifiée et mise à jour par nos experts."
-        canonical="https://thecreamai.com/"
+        canonical="https://comparateur-tech.com/"
         structuredData={STRUCTURED_DATA}
       />
       <Header />

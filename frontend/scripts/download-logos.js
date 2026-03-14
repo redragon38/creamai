@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * ============================================================
- *  Thecreamai — Logo Downloader
+ *  Comparateur-Tech — Logo Downloader
  * ============================================================
  *  Télécharge automatiquement tous les logos des outils
  *  depuis tools.json, en essayant plusieurs sources dans
@@ -71,7 +71,7 @@ function download(srcUrl, destPath) {
   return new Promise((resolve) => {
     const proto = srcUrl.startsWith('https') ? https : http;
 
-    const req = proto.get(srcUrl, { timeout: TIMEOUT_MS, headers: { 'User-Agent': 'Mozilla/5.0 Thecreamai-LogoBot/1.0' } }, (res) => {
+    const req = proto.get(srcUrl, { timeout: TIMEOUT_MS, headers: { 'User-Agent': 'Mozilla/5.0 Comparateur-Tech-LogoBot/1.0' } }, (res) => {
       // Suit les redirections (max 3)
       if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location) {
         return download(res.headers.location, destPath).then(resolve);
@@ -220,7 +220,7 @@ async function runPool(tasks, concurrency) {
 
 async function main() {
   console.log(`\n${C.bold}${C.cyan}══════════════════════════════════════════${C.reset}`);
-  console.log(`${C.bold}  Thecreamai — Logo Downloader${C.reset}`);
+  console.log(`${C.bold}  Comparateur-Tech — Logo Downloader${C.reset}`);
   console.log(`${C.cyan}══════════════════════════════════════════${C.reset}\n`);
 
   // Charge tools.json

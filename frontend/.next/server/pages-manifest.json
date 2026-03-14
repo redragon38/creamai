@@ -2,6 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/contact": "pages/contact.js",
+  "/top-10-intelligence-artificielle": "pages/top-10-intelligence-artificielle.js",
+  "/top-10-hebergement-web": "pages/top-10-hebergement-web.js",
+  "/top-10-vpn": "pages/top-10-vpn.js",
+  "/top-10-antivirus": "pages/top-10-antivirus.js",
+  "/": "pages/index.js"
 }

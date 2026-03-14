@@ -38,7 +38,7 @@ export default function Top10Antivirus({ tools }) {
       seo={{
         title: 'Top 10 Antivirus 2025 — Classement & Comparatif',
         description: `Découvrez le Top 10 des meilleurs antivirus en 2025. ${META.desc}`,
-        canonical: 'https://thecreamai.com/top-10-antivirus',
+        canonical: 'https://comparateur-tech.com/top-10-antivirus',
         keywords: 'top 10 antivirus, meilleur antivirus 2025, comparatif antivirus',
       }}
     />

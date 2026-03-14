@@ -210,9 +210,9 @@ export default function ArticlePage({ article, slug }) {
   return (
     <div className="min-h-screen">
       <SEO
-        title={`${article.title} — Thecreamai`}
+        title={`${article.title} — Comparateur-Tech`}
         description={article.intro}
-        canonical={`https://thecreamai.com/blog/${slug}`}
+        canonical={`https://comparateur-tech.com/blog/${slug}`}
       />
       <Header />
       <main>
