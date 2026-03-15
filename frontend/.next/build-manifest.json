@@ -32,25 +32,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/contact.js"
     ],
-    "/top-10-antivirus": [
+    "/newsletter": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/top-10-antivirus.js"
+      "static/chunks/pages/newsletter.js"
     ],
-    "/top-10-hebergement-web": [
+    "/outils": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/top-10-hebergement-web.js"
-    ],
-    "/top-10-intelligence-artificielle": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/top-10-intelligence-artificielle.js"
-    ],
-    "/top-10-vpn": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/top-10-vpn.js"
+      "static/chunks/pages/outils.js"
     ]
   },
   "ampFirstPages": []

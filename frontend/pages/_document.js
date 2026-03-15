@@ -27,14 +27,14 @@ export default function Document() {
         <meta name="format-detection" content="telephone=no" />
 
         {/* ── Google Analytics (chargé en defer pour ne pas bloquer) ── */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8G6N9DX0FL" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8HZX7K2DW" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-8G6N9DX0FL', { send_page_view: false });
+              gtag('config', 'G-E8HZX7K2DW');
             `,
           }}
         />

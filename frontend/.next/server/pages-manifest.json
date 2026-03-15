@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/top-10-intelligence-artificielle": "pages/top-10-intelligence-artificielle.js",
-  "/top-10-hebergement-web": "pages/top-10-hebergement-web.js",
-  "/top-10-vpn": "pages/top-10-vpn.js",
-  "/top-10-antivirus": "pages/top-10-antivirus.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/newsletter": "pages/newsletter.js",
+  "/outils": "pages/outils.js",
+  "/contact": "pages/contact.js"
 }
